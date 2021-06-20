@@ -7,7 +7,7 @@ export const config = {
     dialect: 'postgres',
     aws_region: process.env.AWS_REGION,
     aws_profile: process.env.AWS_PROFILE,
-    aws_media_bucket: process.env.MEDIA_BUCKET,
+    aws_media_bucket: process.env.AWS_MEDIA_BUCKET,
   },
   prod: {
     username: '',
@@ -16,7 +16,7 @@ export const config = {
     host: '',
     dialect: 'postgres',
   },
-  jwt {
-    secret: "helloworld"
-  }
+  jwt: {
+    secret: 'helloworld',
+  },
 };
